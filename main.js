@@ -28,12 +28,7 @@ fetch('http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3')
           let markup = `
                      <div class="title">
                        <p>Title: ${title}</p>
-                       <p>Episode ID: ${data.results[0].episode_id}</p>
-                       <ul>Characters:
-                         <li>${data.results[0].characters}</li>
-                       </ul>
-                       ${renderCharacters(data.results.characters)}
-                     </div>
+                     
                    `
 
                    document.body.innerHTML = markup;
